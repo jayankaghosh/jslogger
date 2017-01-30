@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jSLogger</title>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+	<div class="header">
+		<span class="header-text"><span>jSL</span>ogger</span>
+		(<span id="power-status">N/A</span>)
+		<!-- On/Off Rounded switch -->
+		<span class="power">
+			<label class="switch">
+			  <input type="checkbox" id="power-checkbox">
+			  <div class="slider round"></div>
+			</label>
+		</span>
+	</div>
+	<hr />
+	<div id="results">
+		<!-- <textarea id="keystrokes-container" rows="10"></textarea>
+		<hr />
+		<a href="#" id="log-download-button">Download keystrokes log</a>
+		<br><br>
+		<a href="#" id="log-clear-button">Clear keystrokes log</a> -->
+		<form id="submit-password">
+			<input type="password" id="password" placeholder="&bull; &bull; &bull; &bull;" autofocus autocomplete="off" maxlength="4">
+			<button class="button" style="vertical-align:middle"><span>Unlock </span></button>
+			<div id="error-info-container"></div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="popup.js"></script>
+</html>
